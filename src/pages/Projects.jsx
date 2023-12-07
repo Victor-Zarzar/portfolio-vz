@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function projects() {
   return (
-    <div className="container-button relative inline-flex group mx-auto mt-40">
+    <div className="container-button relative inline-flex group mx-auto mt-40 mb-20">
       <div
         className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200">
       </div>
