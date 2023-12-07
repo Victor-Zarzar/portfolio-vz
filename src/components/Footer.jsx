@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
-        <div>
-            <footer className="bg-black mt-auto sm:h-20 md:h-20 lg:h-24 xl:h-28 2xl:h-28 w-full md:flex md:items-center md:justify-between shadow p-4 md:p-6 xl:p-8 my-6 mx-0">
+        <div class="font-fira mt-10 bg-neutral-800 p-8 pb-20 sm:pb-8">
+            <footer className="mx-auto flex flex-col sm:max-w-4xl sm:flex-row sm:justify-between">
                 <ul className="flex items-center flex-wrap mb-6 md:mb-0">
                     <li><a className="sm:text-[11px] md:text-xs lg:text-lg font-normal text-white hover:underline mr-4 md:mr-6">Cookie Policy</a></li>
                     <li>

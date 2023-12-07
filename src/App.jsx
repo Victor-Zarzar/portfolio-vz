@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import About from "./pages/About";
-import Home from "./components/Home";
+import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Projects from "./pages/Projects";
 import Error404 from "./pages/Error404";
