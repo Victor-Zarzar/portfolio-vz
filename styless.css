@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border;
+  font-family: "Source Sans Pro", sans-serif;
+}
+html,
+body {
+  @apply h-full m-0 p-0 bg-slate-300;
+}
+#root {
+  @apply flex flex-col min-h-full;
+}
+.content {
+  @apply grow;
+}
