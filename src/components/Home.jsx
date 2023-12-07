@@ -9,10 +9,18 @@ export default function Home() {
 
   return (
     <>
-      <div className="text-home flex text-3xl sm:text-xl md:text-2xl lg:text-3xl  font-bold items-center justify-center mb-4 mt-4">
-        <h1>
-      Victor Zarzar
-        </h1>
+       <div className="text-home flex text-3xl sm:text-xl md:text-2xl lg:text-3xl font-bold items-center justify-center mt-4 mb-96">
+        <div className="flex">
+          <h1>Hi, Im Victor Zarzar! 👋</h1>
+        </div>
+        <div>
+          <div>
+            <h2>Software Developer</h2>
+          </div>
+          <div>
+            <h3>Web/Mobile</h3>
+          </div>
+        </div>
       </div>
     </>
   );
