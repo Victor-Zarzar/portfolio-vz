@@ -44,11 +44,12 @@ export default function Home() {
             <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
               <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col">
                 <div className="pattern-dots-md gray-light">
-                  <div className="rounded bg-gray-800 p-4 transform translate-x-6 -translate-y-6  "  >
+                  <div className="rounded-2xl bg-gray-800 p-4 transform translate-x-6 -translate-y-6">
                     <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-5 flex-shrink-0 p-2">
                       <img src={react} alt="react" className="w-10 h-9" />
                     </div>
-                    <div className="flex-grow">
+                    <div className="flex-grow h-60">
+                      <span class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E]"></span>
                       <h2 className="text-xl title-font font-medium mb-3">Front End</h2>
                       <ul className="text-sm text-justify">
                         <li className="mb-2">HTML</li>
@@ -56,22 +57,22 @@ export default function Home() {
                         <li className="mb-2">Javascript</li>
                         <li className="mb-2">React</li>
                         <li className="mb-2">Cypress</li>
-                        <li className="mb-2">Swagger</li>
+                        <li className="mb-2">Swagger - Fast API</li>
                         <li className="mb-2">Postman</li>
-                        <li className="mb-2">Fast API</li>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
+              <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col">
                 <div className="pattern-dots-md gray-light">
-                  <div className="rounded bg-gray-800 p-4 transform translate-x-6 -translate-y-6 ">
+                  <div className="rounded-2xl bg-gray-800 p-4 transform translate-x-6 -translate-y-6">
                     <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5 flex-shrink-0">
-                    <img src={flutter} alt="flutter" className="w-10 h-9" />
+                      <img src={flutter} alt="flutter" className="w-10 h-9" />
                     </div>
-                    <div className="flex-grow">
-                      <h2 className=" text-xl title-font font-medium mb-3">Mobile</h2>
+                    <div className="flex-grow h-60">
+                      <span class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E]"></span>
+                      <h2 className="text-xl title-font font-medium mb-3">Mobile</h2>
                       <ul className="text-sm text-justify">
                         <li className="mb-2">Dart</li>
                         <li className="mb-2">Flutter</li>
@@ -83,13 +84,14 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
+              <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col">
                 <div className="pattern-dots-md gray-light">
-                  <div className="rounded bg-gray-800 p-4 transform translate-x-6 -translate-y-6 ">
+                  <div className="rounded-2xl bg-gray-800 p-4 transform translate-x-6 -translate-y-6">
                     <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-yellow-100 text-yellow-500 mb-5 flex-shrink-0">
-                    <img src={docker} alt="docker" className="w-10 h-9" />
+                      <img src={docker} alt="docker" className="w-10 h-9" />
                     </div>
-                    <div className="flex-grow">
+                    <div className="flex-grow h-60">
+                      <span class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E]"></span>
                       <h2 className=" text-xl title-font font-medium mb-3">Technologies</h2>
                       <ul className="text-sm text-justify">
                         <li className="mb-2">Docker</li>
