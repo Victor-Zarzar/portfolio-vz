@@ -1,18 +1,11 @@
-// eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
         <div className="font-fira mt-10 bg-neutral-800 p-8 pb-20 sm:pb-8">
             <footer className="mx-auto flex flex-col sm:max-w-4xl sm:flex-row sm:justify-between">
                 <ul className="flex items-center flex-wrap mb-6 md:mb-0">
-                    <li><p className="sm:text-[11px] md:text-xs lg:text-lg font-normal text-white hover:underline mr-4 md:mr-6">Cookie Policy</p></li>
-                    <li>
-                        <Link to="/home">
-                            <p className="sm:text-[11px] md:text-xs lg:text-lg font-normal text-white hover:underline">Contact</p>
-                        </Link>
-                    </li>
+                    <li><p className="sm:text-[11px] md:text-xs lg:text-lg font-normal text-white hover:underline mr-4 md:mr-6">Copyright © 2023-2024 Victor Zarzar. | All rights reserved.</p></li>
                 </ul>
                 <div className="flex sm:justify-center space-x-6">
                     <p href="https://www.facebook.com/victorzarzar58" target="_blank" className="text-white hover:text-gray-400" rel="noreferrer">

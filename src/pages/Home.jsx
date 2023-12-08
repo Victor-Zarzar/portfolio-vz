@@ -1,6 +1,8 @@
 import { useLocation } from "react-router-dom";
 import itdeveloper from "../assets/itdeveloper.gif";
-import { Link } from "react-router-dom";
+import react from "../assets/react.svg";
+import flutter from "../assets/flutter.svg";
+import docker from "../assets/docker.svg";
 
 export default function Home() {
   const location = useLocation();
@@ -27,6 +29,81 @@ export default function Home() {
           </div>
           <a href="https://www.instagram.com/victorzarzar7" target="_blank" rel="noreferrer" className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-neutral-800 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" type="button">Contact</a>
           <a href="" target="_blank" rel="noreferrer" className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-neutral-800 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" type="button">Donwload CV</a>
+        </div>
+        <hr className="divider-home border-2 mt-28" />
+        <div className="text-gray-200 mt-20">
+          <div className="max-w-6xl mx-auto px-5 py-2">
+            <div className="text-center mb-20">
+              <h1 className=" title-font  mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-6xl text-blue-500">Skills</h1>
+              <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-purple-900 sm:text-lg md:text-lg lg:text-xl font-semibold tracking-tighter">Some of the technologies I use in my daily life.</p>
+              <div className="flex mt-6 justify-center">
+                <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex">
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+              <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col">
+                <div className="pattern-dots-md gray-light">
+                  <div className="rounded bg-gray-800 p-4 transform translate-x-6 -translate-y-6  "  >
+                    <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-5 flex-shrink-0 p-2">
+                      <img src={react} alt="react" className="w-10 h-9" />
+                    </div>
+                    <div className="flex-grow">
+                      <h2 className="text-xl title-font font-medium mb-3">Front End</h2>
+                      <ul className="text-sm text-justify">
+                        <li className="mb-2">HTML</li>
+                        <li className="mb-2">Tailwind CSS</li>
+                        <li className="mb-2">Javascript</li>
+                        <li className="mb-2">React</li>
+                        <li className="mb-2">Cypress</li>
+                        <li className="mb-2">Swagger</li>
+                        <li className="mb-2">Postman</li>
+                        <li className="mb-2">Fast API</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
+                <div className="pattern-dots-md gray-light">
+                  <div className="rounded bg-gray-800 p-4 transform translate-x-6 -translate-y-6 ">
+                    <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5 flex-shrink-0">
+                    <img src={flutter} alt="flutter" className="w-10 h-9" />
+                    </div>
+                    <div className="flex-grow">
+                      <h2 className=" text-xl title-font font-medium mb-3">Mobile</h2>
+                      <ul className="text-sm text-justify">
+                        <li className="mb-2">Dart</li>
+                        <li className="mb-2">Flutter</li>
+                        <li className="mb-2">Android Studio</li>
+                        <li className="mb-2">Xcode</li>
+                        <li className="mb-2">Firebase</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
+                <div className="pattern-dots-md gray-light">
+                  <div className="rounded bg-gray-800 p-4 transform translate-x-6 -translate-y-6 ">
+                    <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-yellow-100 text-yellow-500 mb-5 flex-shrink-0">
+                    <img src={docker} alt="docker" className="w-10 h-9" />
+                    </div>
+                    <div className="flex-grow">
+                      <h2 className=" text-xl title-font font-medium mb-3">Technologies</h2>
+                      <ul className="text-sm text-justify">
+                        <li className="mb-2">Docker</li>
+                        <li className="mb-2">Visual Studio Code</li>
+                        <li className="mb-2">Linux</li>
+                        <li className="mb-2">macOS</li>
+                        <li className="mb-2">Windows</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
