@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="navbar flex flex-grow text-white sm:h-20 md:h-20 lg:h-20 xl:h-20 items-center bg-neutral-800">
         <div className="flex items-center justify-between w-full px-6">
           <div className="flex items-center">
-            <span className="sm:text-[10px] md:text-xs lg:text-lg hover:text-gray-400">Victor Zarzar</span>
+            <span className="sm:text-[10px] md:text-xs lg:text-lg hover:text-gray-400 sm:pl-2 md:pl-6 lg:pl-20">Victor Zarzar</span>
             <img src={webdeveloper} alt="webdeveloper" className="sm:h-4 md:h-5 lg:h-8 ml-2" />
           </div>
           <ul className="text-navbar flex mr-80 space-x-10">
