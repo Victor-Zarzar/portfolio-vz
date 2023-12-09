@@ -13,7 +13,6 @@
   "dependencies": {
     "autoprefixer": "^10.4.16",
     "cypress": "^13.6.1",
-    "node": "^21.2.0",
     "openmobile": "^1.0.6",
     "postcss": "^8.4.32",
     "react": "^18.2.0",
