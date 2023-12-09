@@ -28,14 +28,14 @@ export default function Home() {
           <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200">
           </div>
           <a href="https://www.instagram.com/victorzarzar7" target="_blank" rel="noreferrer" className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-neutral-800 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" type="button">Contact</a>
-          <a href="" target="_blank" rel="noreferrer" className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-neutral-800 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" type="button">Donwload CV</a>
+          <a href="" target="_blank" rel="noreferrer" className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-neutral-800 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" type="button">Linkedin</a>
         </div>
         <hr className="divider-home border-2 mt-28" />
         <div className="text-gray-200 mt-20">
           <div className="max-w-6xl mx-auto px-5 py-2">
             <div className="text-center mb-20">
-              <h1 className=" title-font  mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-6xl text-blue-500">Skills</h1>
-              <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-purple-900 sm:text-lg md:text-lg lg:text-xl font-semibold tracking-tighter">Some of the technologies I use in my daily life.</p>
+              <h1 className="title-skills mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-4xl text-blue-500">Skills</h1>
+              <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-purple-900 sm:text-lg md:text-lg lg:text-2xl font-semibold tracking-tighter">Some of the technologies I use in my daily life.</p>
               <div className="flex mt-6 justify-center">
                 <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex">
                 </div>
@@ -49,7 +49,7 @@ export default function Home() {
                       <img src={react} alt="react" className="w-10 h-9" />
                     </div>
                     <div className="flex-grow h-60">
-                      <span class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E]"></span>
+                      <span className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E]"></span>
                       <h2 className="text-xl title-font font-medium mb-3">Front End</h2>
                       <ul className="text-sm text-justify">
                         <li className="mb-2">HTML</li>
@@ -71,7 +71,7 @@ export default function Home() {
                       <img src={flutter} alt="flutter" className="w-10 h-9" />
                     </div>
                     <div className="flex-grow h-60">
-                      <span class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E]"></span>
+                      <span className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E]"></span>
                       <h2 className="text-xl title-font font-medium mb-3">Mobile</h2>
                       <ul className="text-sm text-justify">
                         <li className="mb-2">Dart</li>
@@ -91,7 +91,7 @@ export default function Home() {
                       <img src={docker} alt="docker" className="w-10 h-9" />
                     </div>
                     <div className="flex-grow h-60">
-                      <span class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E]"></span>
+                      <span className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E]"></span>
                       <h2 className=" text-xl title-font font-medium mb-3">Technologies</h2>
                       <ul className="text-sm text-justify">
                         <li className="mb-2">Docker</li>
@@ -102,6 +102,22 @@ export default function Home() {
                       </ul>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="divider-home border-2 mt-20" />
+          <div className="col-span-4 sm:col-span-9">
+            <div className="shadow rounded-lg p-6">
+              <h2 className="title-skills mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-4xl text-blue-500 text-center mt-14">My Current Location</h2>
+              <p className="text-base leading-relaxed text-center xl:w-2/4 lg:w-3/4 mx-auto text-purple-900 sm:text-lg md:text-lg lg:text-2xl font-semibold tracking-tighter mt-5">
+                Novo Hamburgo, RS - Brazil
+              </p>
+              <h3 className="text-base text-center leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-purple-900 sm:text-lg md:text-lg lg:text-2xl font-semibold tracking-tighter">
+                (51) 9.98618-1044
+              </h3>
+              <div className="flex mt-6 justify-center">
+                <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex">
                 </div>
               </div>
             </div>
