@@ -15,17 +15,17 @@ const Navbar = () => {
           <ul className="text-navbar flex sm:mr-20 md:mr-20 lg:mr-80 space-x-10">
             <div className="flex items-center">
               <li className="sm:text-[10px] md:text-xs lg:text-lg hover:text-gray-400">
-                <Link to="/portfolio/home">Home</Link>
+                <Link to="/home">Home</Link>
               </li>
             </div>
             <div className="flex items-center">
               <li className="sm:text-[10px] md:text-xs lg:text-lg hover:text-gray-400">
-                <Link to="/portfolio/about">About</Link>
+                <Link to="/about">About</Link>
               </li>
             </div>
             <div className="flex items-center">
               <li className="sm:text-[10px] md:text-xs lg:text-lg hover:text-gray-400">
-                <Link to="/portfolio/projects">Projects</Link>
+                <Link to="/projects">Projects</Link>
               </li>
             </div>
           </ul>

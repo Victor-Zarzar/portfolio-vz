@@ -13,11 +13,11 @@ const App = () => {
     <>
       <Navbar />
       <Routes>
-        <Route path="/portfolio/home" element={<Home />} />
-        <Route path="/portfolio/about" element={<About />} />
-        <Route path="/portfolio/projects" element={<Projects />} />
-        <Route path="/portfolio/error404" element={<Error404 />} />
-        <Route path="/portfolio/*" element={<Navigate to="/portfolio/home" />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/error404" element={<Error404 />} />
+        <Route path="/*" element={<Navigate to="/home" />} />
         <Route path="*" element={<RouteNotFound status={404} />} />
       </Routes>
       <Footer />
@@ -29,7 +29,7 @@ function RouteNotFound() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    navigate("/portfolio/error404");
+    navigate("/error404");
   }, []);
   return null;
 }

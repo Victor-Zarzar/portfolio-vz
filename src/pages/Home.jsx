@@ -7,7 +7,7 @@ import docker from "../assets/docker.svg";
 export default function Home() {
   const location = useLocation();
 
-  if (location.pathname !== "/portfolio/home") {
+  if (location.pathname !== "/home") {
     return null;
   }
 
