@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React from "react"
 import { Link } from "react-router-dom";
 import webdeveloper from "../assets/webdeveloper.gif";
@@ -13,7 +12,7 @@ const Navbar = () => {
             <span className="sm:text-[10px] md:text-xs lg:text-lg hover:text-gray-400 sm:pl-2 md:pl-6 lg:pl-20">Victor Zarzar</span>
             <img src={webdeveloper} alt="webdeveloper" className="sm:h-4 md:h-5 lg:h-8 ml-2" />
           </div>
-          <ul className="text-navbar flex mr-80 space-x-10">
+          <ul className="text-navbar flex sm:mr-20 md:mr-20 lg:mr-80 space-x-10">
             <div className="flex items-center">
               <li className="sm:text-[10px] md:text-xs lg:text-lg hover:text-gray-400">
                 <Link to="/portfolio/home">Home</Link>
