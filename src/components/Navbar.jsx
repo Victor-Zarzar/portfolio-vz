@@ -1,31 +1,47 @@
-import React from "react"
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import webdeveloper from "../assets/webdeveloper.gif";
 
-
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <div className="flex">
-      <div className="navbar flex flex-grow text-white sm:h-20 md:h-20 lg:h-20 xl:h-20 items-center bg-gray-800">
-        <div className="flex items-center justify-between w-full px-6">
+      <div className="navbar flex flex-grow text-white h-20 items-center bg-gray-800">
+        <div className={`flex items-center justify-between w-full px-6 ${menuOpen ? 'lg:pl-6' : 'lg:pl-32'}`}>
           <div className="flex items-center">
-            <span className="sm:text-[10px] md:text-xs lg:text-lg hover:text-gray-400 sm:pl-2 md:pl-6 lg:pl-20">Victor Zarzar</span>
-            <img src={webdeveloper} alt="webdeveloper" className="sm:h-4 md:h-5 lg:h-8 ml-2" />
+            <span className="text-lg hover:text-gray-400 pl-4">Victor Zarzar</span>
+            <img src={webdeveloper} alt="webdeveloper" className="h-8 ml-2" />
           </div>
-          <ul className="text-navbar flex sm:mr-20 md:mr-20 lg:mr-80 space-x-10">
-            <div className="flex items-center">
-              <li className="sm:text-[10px] md:text-xs lg:text-lg hover:text-gray-400">
-                <Link to="/home">Home</Link>
+          <div className="lg:hidden">
+            <button onClick={toggleMenu} className="text-lg text-gray-400 hover:text-white focus:outline-none">
+              {menuOpen ? '✕' : '☰'}
+            </button>
+          </div>
+          <ul className={`text-navbar flex space-x-3 ${menuOpen ? "flex-col" : "hidden"} lg:flex`}>
+            <div className={`flex items-center ${menuOpen ? 'ml-4' : 'mr-3'}`}>
+              <li className="text-lg hover:text-gray-400">
+                <Link to="/home" onClick={toggleMenu}>
+                  Home
+                </Link>
               </li>
             </div>
-            <div className="flex items-center">
-              <li className="sm:text-[10px] md:text-xs lg:text-lg hover:text-gray-400">
-                <Link to="/about">About</Link>
+            <div className={`flex items-center ${menuOpen ? 'mr-0' : 'mr-3'}`}>
+              <li className="text-lg hover:text-gray-400">
+                <Link to="/about" onClick={toggleMenu}>
+                  About
+                </Link>
               </li>
             </div>
-            <div className="flex items-center">
-              <li className="sm:text-[10px] md:text-xs lg:text-lg hover:text-gray-400">
-                <Link to="/projects">Projects</Link>
+            <div className={`flex items-center ${menuOpen ? 'mr-0' : 'mr-3'}`}>
+              <li className="text-lg hover:text-gray-400">
+                <Link to="/projects" onClick={toggleMenu}>
+                  Projects
+                </Link>
               </li>
             </div>
           </ul>
