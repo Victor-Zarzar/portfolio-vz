@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div className="flex">
-      <div className="navbar flex flex-grow text-white h-20 items-center bg-gray-800">
+      <div className="navbar flex flex-grow text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400 h-20 items-center bg-gray-800">
         <div className={`flex items-center justify-between w-full px-6 ${menuOpen ? 'lg:pl-6' : 'lg:pl-32'}`}>
           <div className="flex items-center">
             <span className="text-lg hover:text-gray-400 pl-4">Victor Zarzar</span>
