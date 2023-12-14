@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import About from "./pages/About";
@@ -30,7 +30,7 @@ function RouteNotFound() {
 
   useEffect(() => {
     navigate("/error404");
-  }, []);
+  }, [navigate]);
   return null;
 }
 
