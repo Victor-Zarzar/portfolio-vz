@@ -17,7 +17,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row items-center max-w-6xl px-6 py-8 mx-auto">
           <div className="w-full md:w-1/2 py-8">
             <h1 className="text-purple-900 text-2xl md:text-3xl lg:text-4xl font-semibold leading-none tracking-tighter">
-              Welcome to <p className="text-blue-500">My Portfolio, </p> I´am Web/Mobile Developer👋.
+              Welcome to <p className="text-blue-500">My Portfolio, </p> I´am Web/Mobile Developer🖖🏻.
             </h1>
           </div>
           <div className="w-full md:w-1/2 py-8 text-right">
@@ -30,8 +30,7 @@ export default function Home() {
           <a href="https://github.com/Victor-Zarzar" target="_blank" rel="noreferrer" className="relative inline-flex items-center justify-center w-[6rem] md:w-[8rem] lg:w-[9rem] text-xs md:text-xs lg:text-xs px-8 py-4 font-bold text-white transition-all duration-200 bg-neutral-800 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" type="button">GitHub</a>
           <a href="https://www.linkedin.com/in/victorzarzar" target="_blank" rel="noreferrer" className="relative inline-flex items-center justify-center w-[6rem] md:w-[8rem] lg:w-[9rem] text-xs md:text-xs lg:text-xs px-8 py-4 font-bold text-white transition-all duration-200 bg-neutral-800 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" type="button">Linkedin</a>
         </div>
-        <hr className="divider-home border-2 mt-28" />
-        <div className="text-gray-200 mt-20">
+        <div className="text-gray-200 mt-40">
           <div className="max-w-6xl mx-auto px-5 py-2">
             <div className="text-center mb-20">
               <h1 className="title-skills mb-4 font-extrabold leading-10 tracking-tight md:text-2xl lg:text-4xl text-blue-500">Skills</h1>
@@ -108,8 +107,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <hr className="divider-home border-2 mt-20" />
-          <div className="col-span-4">
+          <div className="col-span-4 mt-20">
             <div className="shadow rounded-lg p-6">
               <h2 className="title-skills mb-4 text-4xl font-extrabold leading-10 tracking-tight md:text-2xl lg:text-4xl text-blue-500 text-center mt-14">My Current Location</h2>
               <p className="text-base leading-relaxed text-center xl:w-2/4 lg:w-3/4 mx-auto text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter mt-5">

@@ -23,8 +23,7 @@ export default function About() {
             I love learning about new technologies and solving problems. In love with coffee, my vinyl records & Rock 'n' Roll :)
           </p>
         </div>
-        <hr className="divider-home border-2 mt-20" />
-        <div className="shadow rounded-lg p-6">
+        <div className="shadow rounded-lg p-6 mt-20">
           <h2 className="title-about mb-4 text-4xl font-extrabold leading-10 tracking-tight md:text-2xl lg:text-4xl text-blue-500 text-center mt-14">Experience Tech</h2>
           <div className="flex mt-6 justify-center">
             <div className="w-32 h-1 rounded-full bg-indigo-500 inline-flex">
@@ -44,8 +43,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <hr className="divider-home border-2 mt-20" />
-      <div className="shadow rounded-lg p-6">
+      <div className="shadow rounded-lg p-6 mt-20">
         <h2 className="title-about mb-4 text-4xl font-extrabold leading-10 tracking-tight md:text-2xl lg:text-4xl text-blue-500 text-center mt-14">Education</h2>
         <div className="flex mt-6 justify-center">
           <div className="w-32 h-1 rounded-full bg-indigo-500 inline-flex">
@@ -58,8 +56,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <hr className="divider-home border-2 mt-20" />
-      <div className="shadow rounded-lg p-6">
+      <div className="shadow rounded-lg p-6 mt-20">
         <h2 className="title-about mb-4 text-4xl font-extrabold leading-10 tracking-tight md:text-2xl lg:text-4xl text-blue-500 text-center mt-14">Languages</h2>
         <div className="flex mt-6 justify-center">
           <div className="w-32 h-1 rounded-full bg-indigo-500 inline-flex">
