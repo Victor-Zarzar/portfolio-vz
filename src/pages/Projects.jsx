@@ -44,9 +44,9 @@ export default function Projects() {
         <p className="text-base leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter mb-16">
           Here are a few of my live, real-world projects
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-y-10 space-x-10">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-y-10 gap-10 md:gap-16 lg:gap-8">
           {projects.map((project, index) => (
-            <div key={index} className={`relative ${index === 0 ? 'first-project' : ''}`}>
+            <div key={index} className="relative">
               <div className="flex flex-col shadow-sm h-[26rem] w-[23rem] md:h-[28rem] md:w-[25rem] lg:h-[28rem] lg:w-[25rem] bg-gray-800 p-8 rounded-2xl">
                 <a href={sourceCodeLinks[index]} target="_blank" rel="noreferrer" className="mb-4">
                   <img src={project.photo} alt={project.title} />
