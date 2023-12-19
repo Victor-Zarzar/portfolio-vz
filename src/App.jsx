@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import Home from "./pages/Home";
+import Skills from "./pages/Skills";
+import Location from "./pages/Location";
 import Projects from "./pages/Projects";
 import Error404 from "./pages/Error404";
 
@@ -20,6 +22,8 @@ const App = () => {
         <Route path="/*" element={<Navigate to="/home" />} />
         <Route path="*" element={<RouteNotFound status={404} />} />
       </Routes>
+      <Skills />
+      <Location />
       <Footer />
     </>
   )

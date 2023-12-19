@@ -1,54 +1,45 @@
 import { useState } from "react";
+import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 import webdeveloper from "../assets/webdeveloper.gif";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  const Links = [
+    { name: "Home", link: "home" },
+    { name: "About me", link: "about" },
+    { name: "Projects", link: "projects" },
+  ];
+  const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex">
-      <div className="navbar flex flex-grow text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400 h-20 items-center bg-gray-800">
-        <div className={`flex items-center justify-between w-full px-6 ${menuOpen ? 'lg:pl-6' : 'lg:pl-32'}`}>
-          <div className="flex items-center">
-            <span className="text-lg hover:text-gray-400 pl-4">Victor Zarzar</span>
-            <img src={webdeveloper} alt="webdeveloper" className="h-8 ml-2" />
-          </div>
-          <div className="lg:hidden">
-            <button onClick={toggleMenu} className="text-lg text-gray-400 hover:text-white focus:outline-none">
-              {menuOpen ? '✕' : '☰'}
-            </button>
-          </div>
-          <ul className={`text-navbar flex space-x-3 ${menuOpen ? "flex-col" : "hidden"} lg:flex`}>
-            <div className={`flex items-center ${menuOpen ? 'ml-4' : 'mr-3'}`}>
-              <li className="text-lg hover:text-gray-400">
-                <Link to="/home" onClick={toggleMenu}>
-                  Home
-                </Link>
-              </li>
-            </div>
-            <div className={`flex items-center ${menuOpen ? 'mr-0' : 'mr-3'}`}>
-              <li className="text-lg hover:text-gray-400">
-                <Link to="/about" onClick={toggleMenu}>
-                  About
-                </Link>
-              </li>
-            </div>
-            <div className={`flex items-center ${menuOpen ? 'mr-0' : 'mr-3'}`}>
-              <li className="text-lg hover:text-gray-400">
-                <Link to="/projects" onClick={toggleMenu}>
-                  Projects
-                </Link>
-              </li>
-            </div>
-          </ul>
+    <div className="w-full max-w-7xl">
+      <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
+        <div className="font-bold text-2xl cursor-pointer flex items-center gap-1">
+          <span className="text-xl text-gray-400 hover:text-white focus:outline-none pl-6 md:pl-20">Victor Zarzar</span>
+          <img src={webdeveloper} alt="webdeveloper" className="h-8 ml-2" />
         </div>
+        <div
+          onClick={() => setOpen(!open)}
+          className="absolute right-8 top-6 cursor-pointer md:hidden w-7 h-7 text-gray-400">
+          {open ? <XMarkIcon /> : <Bars3BottomRightIcon />}
+        </div>
+        <ul
+          className={`md:flex md:items-center md:pb-0 absolute md:static  md:z-auto z-10 left-0 w-full md:w-auto mt-4 md:mt-0 md:pl-0 pl-9 bg-gray-800 sm:bg-transparent transition-all duration-500 ease-in ${open ? "top-12" : "top-[-490px]"}`}>
+          {Links.map((link) => (
+            <li className="md:ml-8 md:my-0 my-7 font-semibold" key={link.name}>
+              <Link
+                to={link.link}
+                smooth="true"
+                spy="true"
+                className="text-xl text-gray-400 hover:text-white focus:outline-none hover:text-primary duration-500">
+                {link.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
-}
+};
 
 export default Navbar;
