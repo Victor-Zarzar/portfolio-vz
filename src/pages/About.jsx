@@ -4,6 +4,7 @@ import unitedstates from "../assets/unitedstates.svg";
 import brazil from "../assets/brazil.svg";
 import qa from "../assets/qa.svg";
 import dev from "../assets/dev.svg";
+import profile from "../assets/profile.jpg";
 
 export default function About() {
   return (
@@ -15,6 +16,7 @@ export default function About() {
             <div className="w-32 h-1 rounded-full bg-indigo-500 inline-flex">
             </div>
           </div>
+          <img src={profile} alt="profile" className="w-40 h-40 md:w-72 md:h-72 bg-gray-300 rounded-full mb-4 shrink-0 mx-auto mt-14" />
           <p className="text-base leading-relaxed text-center xl:w-2/4 lg:w-3/4 mx-auto text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter mt-10">
             My first contact with programming was in 2009, using SQL-SERVER 2000 & My SQL technologies, creating, restoring and editing databases, and creating sites in PHP.
             Always looking to improve my knowledge daily, I'm not afraid of the unknown, I try to evolve every day, new challenges are welcome.
@@ -29,17 +31,17 @@ export default function About() {
             </div>
           </div>
           <div className="flex">
-          <div className="flex items-center mx-auto mt-10">
-            <img src={qa} alt="qa" className="h-4 w-5 md:w-5 md:h-6 lg:w-6 lg:h-6 mr-1" />
-            <span className="text-sm leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">QA Tester - Freelancer - December 2022 - March 2023</span>
+            <div className="flex items-center mx-auto mt-10">
+              <img src={qa} alt="qa" className="h-4 w-5 md:w-5 md:h-6 lg:w-6 lg:h-6 mr-1" />
+              <span className="text-sm leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">QA Tester - Freelancer - December 2022 - March 2023</span>
+            </div>
           </div>
-        </div>
-        <div className="flex">
-          <div className="flex items-center mx-auto mt-5">
-            <img src={dev} alt="dev" className="h-4 w-5 md:w-5 md:h-6 lg:w-6 lg:h-6 mr-1" />
-            <span className="text-base leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">Software Developer JR - March 2023 - Present</span>
+          <div className="flex">
+            <div className="flex items-center mx-auto mt-5">
+              <img src={dev} alt="dev" className="h-4 w-5 md:w-5 md:h-6 lg:w-6 lg:h-6 mr-1" />
+              <span className="text-base leading-relaxed text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">Software Developer JR - March 2023 - Present</span>
+            </div>
           </div>
-        </div>
         </div>
       </div>
       <hr className="divider-home border-2 mt-20" />
