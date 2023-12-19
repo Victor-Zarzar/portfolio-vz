@@ -8,14 +8,14 @@ export default function Skills() {
     const location = useLocation();
 
     if (location.pathname !== "/home") {
-      return null;
+        return null;
     }
 
     return (
         <div className="text-gray-200 mt-40">
             <div className="max-w-6xl mx-auto px-5 py-2">
                 <div className="text-center mb-20">
-                    <h1 className="title-skills mb-4 font-extrabold leading-10 tracking-tight md:text-2xl lg:text-4xl text-blue-500">Skills</h1>
+                    <h1 className="title-skills mb-4 text-4xl font-extrabold leading-10 tracking-tight md:text-2xl lg:text-4xl text-blue-500 text-center">Skills</h1>
                     <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">Some of the technologies I use in my daily life.</p>
                     <div className="flex mt-6 justify-center">
                         <div className="w-32 h-1 rounded-full bg-indigo-500 inline-flex">

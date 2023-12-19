@@ -49,7 +49,7 @@ export default function Projects() {
             <div key={index} className={`relative ${index === 0 ? 'first-project' : ''}`}>
               <div className="flex flex-col shadow-sm h-[26rem] w-[23rem] md:h-[28rem] md:w-[25rem] lg:h-[28rem] lg:w-[25rem] bg-gray-800 p-8 rounded-2xl">
                 <a href={sourceCodeLinks[index]} target="_blank" rel="noreferrer" className="mb-4">
-                  <img src={project.photo} alt={project.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <img src={project.photo} alt={project.title} />
                 </a>
                 <h3 className="title-projects mb-4 text-lg font-extrabold leading-10 tracking-tight md:text-lg text-blue-500 text-center">
                   {project.title}

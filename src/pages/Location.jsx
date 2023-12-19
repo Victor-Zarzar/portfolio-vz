@@ -12,7 +12,7 @@ export default function Location() {
         <>
             <div className="col-span-4 mt-20">
                 <div className="shadow rounded-lg p-6">
-                    <h2 className="title-skills mb-4 text-4xl font-extrabold leading-10 tracking-tight md:text-2xl lg:text-4xl text-blue-500 text-center mt-14">My Current Location</h2>
+                    <h2 className="title-location mb-4 text-4xl font-extrabold leading-10 tracking-tight md:text-2xl lg:text-4xl text-blue-500 text-center mt-14">My Current Location</h2>
                     <p className="text-base leading-relaxed text-center xl:w-2/4 lg:w-3/4 mx-auto text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter mt-5">
                         Novo Hamburgo, RS - Brazil
                     </p>
