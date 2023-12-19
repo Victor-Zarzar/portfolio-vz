@@ -7,19 +7,19 @@ export default function Projects() {
       title: "To-do List",
       description:
         "App Todo-List in flutter Android/iOS.",
-      photo: "/src/assets/projects/todo.png",
+      photo: "src/assets/projects/todo.png",
     },
     {
       title: "Portfolio",
       description:
         "My portfolio in react, web project.",
-      photo: "/src/assets/projects/portfolio.png",
+      photo: "src/assets/projects/portfolio.png",
     },
     {
       title: "Mario Jump",
       description:
         "App Mario Jump in flutter Android/iOS",
-      photo: "/src/assets/projects/mario.png",
+      photo: "src/assets/projects/mario.png",
     },
   ];
 
@@ -47,7 +47,7 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-y-10 gap-10 md:gap-16 lg:gap-8">
           {projects.map((project, index) => (
             <div key={index} className="relative">
-              <div className="flex flex-col shadow-sm h-[26rem] w-[23rem] md:h-[28rem] md:w-[25rem] lg:h-[28rem] lg:w-[25rem] bg-gray-800 p-8 rounded-2xl">
+              <div className="flex flex-col shadow-sm h-[26rem] w-[21rem] md:h-[28rem] md:w-[25rem] lg:h-[28rem] lg:w-[25rem] bg-gray-800 p-8 rounded-2xl">
                 <a href={sourceCodeLinks[index]} target="_blank" rel="noreferrer" className="mb-4">
                   <img src={project.photo} alt={project.title} />
                 </a>
