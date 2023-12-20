@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import todo from "../assets/projects/todo.png";
+import portfolio from "../assets/projects/portfolio.png";
+import mario from "../assets/projects/mario.png";
 
 export default function Projects() {
 
@@ -7,19 +10,19 @@ export default function Projects() {
       title: "To-do List",
       description:
         "App Todo-List in flutter Android/iOS.",
-      photo: "src/assets/todo.png",
+      photo: todo,
     },
     {
       title: "Portfolio",
       description:
         "My portfolio in react, web project.",
-      photo: "src/assets/portfolio.png",
+      photo: portfolio,
     },
     {
       title: "Mario Jump",
       description:
         "App Mario Jump in flutter Android/iOS",
-      photo: "src/assets/mario.png",
+      photo: mario,
     },
   ];
 
