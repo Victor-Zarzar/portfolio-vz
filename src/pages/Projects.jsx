@@ -28,8 +28,8 @@ export default function Projects() {
 
   const sourceCodeLinks = [
     "https://github.com/Victor-Zarzar/ToDoList-Flutter",
-    "https://github.com/Victor-Zarzar/SuperMario-Flutter",
     "https://github.com/Victor-Zarzar/portfolio-vz",
+    "https://github.com/Victor-Zarzar/SuperMario-Flutter",
   ];
 
   return (
