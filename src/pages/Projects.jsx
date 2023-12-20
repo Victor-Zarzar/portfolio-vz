@@ -7,19 +7,19 @@ export default function Projects() {
       title: "To-do List",
       description:
         "App Todo-List in flutter Android/iOS.",
-      photo: "src/assets/projects/todo.png",
+      photo: "src/assets/todo.png",
     },
     {
       title: "Portfolio",
       description:
         "My portfolio in react, web project.",
-      photo: "src/assets/projects/portfolio.png",
+      photo: "src/assets/portfolio.png",
     },
     {
       title: "Mario Jump",
       description:
         "App Mario Jump in flutter Android/iOS",
-      photo: "src/assets/projects/mario.png",
+      photo: "src/assets/mario.png",
     },
   ];
 
