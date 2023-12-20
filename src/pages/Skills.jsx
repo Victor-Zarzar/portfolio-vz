@@ -22,17 +22,17 @@ export default function Skills() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-wrap -mx-4 -mb-10 -mt-4">
-                    <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-y-10 gap-10 md:gap-16 lg:gap-8 mr-8 md:mr-0">
+                    <div className="p-4 md:mb-0 mb-6 flex flex-col mx-auto mt-5">
                         <div className="pattern-dots-md gray-light">
                             <div className="rounded-2xl bg-gray-800 p-4 transform translate-x-6 -translate-y-6">
                                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-5 flex-shrink-0 p-2">
                                     <img src={react} alt="react" className="md:w-5 md:h-6 lg:w-10 lg:h-8" />
                                 </div>
-                                <div className="flex-grow h-60 w-48 md:h-60 md:w-40 lg:h-60 lg:w-40">
+                                <div className="flex-grow h-[20rem] w-[16rem] md:h-[21rem] md:w-[22rem] lg:h-[21rem] lg:w-[20rem]">
                                     <span className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E]"></span>
                                     <h2 className="md:text-lg lg:text-xl title-font font-medium mb-3">Front End</h2>
-                                    <ul className="text-sm text-justify">
+                                    <ul className="text-lg text-justify">
                                         <li className="mb-2">HTML</li>
                                         <li className="mb-2">Tailwind CSS</li>
                                         <li className="mb-2">Javascript</li>
@@ -45,16 +45,16 @@ export default function Skills() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col mx-auto">
+                    <div className="p-4 md:mb-0 mb-6 flex flex-col mx-auto mt-5">
                         <div className="pattern-dots-md gray-light">
                             <div className="rounded-2xl bg-gray-800 p-4 transform translate-x-6 -translate-y-6">
                                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5 flex-shrink-0">
                                     <img src={flutter} alt="flutter" className="md:w-5 md:h-6 lg:w-10 lg:h-8" />
                                 </div>
-                                <div className="flex-grow h-60 w-48 md:h-60 md:w-40 lg:h-60 lg:w-40">
+                                <div className="flex-grow h-[20rem] w-[16rem] md:h-[21rem] md:w-[22rem] lg:h-[21rem] lg:w-[20rem]">
                                     <span className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E]"></span>
                                     <h2 className="md:text-lg lg:text-xl title-font font-medium mb-3">Mobile</h2>
-                                    <ul className="text-sm text-justify">
+                                    <ul className="text-lg text-justify">
                                         <li className="mb-2">Dart</li>
                                         <li className="mb-2">Flutter</li>
                                         <li className="mb-2">Android Studio</li>
@@ -65,16 +65,16 @@ export default function Skills() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col mx-auto">
+                    <div className="p-4 md:mb-0 mb-6 flex flex-col mx-auto mt-5">
                         <div className="pattern-dots-md gray-light">
                             <div className="rounded-2xl bg-gray-800 p-4 transform translate-x-6 -translate-y-6">
                                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-yellow-100 text-yellow-500 mb-5 flex-shrink-0">
                                     <img src={docker} alt="docker" className="md:w-5 md:h-6 lg:w-10 lg:h-8" />
                                 </div>
-                                <div className="flex-grow h-60 w-48 md:h-60 md:w-40 lg:h-60 lg:w-40">
+                                <div className="flex-grow h-[20rem] w-[16rem] md:h-[21rem] md:w-[22rem] lg:h-[21rem] lg:w-[20rem]">
                                     <span className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E]"></span>
                                     <h2 className="md:text-lg lg:text-xl title-font font-medium mb-3">Technologies</h2>
-                                    <ul className="text-sm text-justify">
+                                    <ul className="text-lg text-justify">
                                         <li className="mb-2">Docker</li>
                                         <li className="mb-2">Git</li>
                                         <li className="mb-2">GitLab</li>
