@@ -8,12 +8,30 @@ import Skills from "./pages/Skills";
 import Location from "./pages/Location";
 import Projects from "./pages/Projects";
 import Error404 from "./pages/Error404";
+import { useState } from "react";
+import { ThemeProvider, createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    background: ${({ theme }) => theme.body};
+  }`;
 
 const App = () => {
 
+  const [theme, setTheme] = useState("light");
+
+  const light = {
+      body: "#E2E2E2"
+  };
+  const dark = {
+      body: "#363537"
+  };
+
   return (
     <>
-      <Navbar />
+      <ThemeProvider theme={theme === "light" ? dark : light}>
+            <GlobalStyle />
+            <Navbar theme={theme} setTheme={setTheme} />
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -25,6 +43,7 @@ const App = () => {
       <Skills />
       <Location />
       <Footer />
+      </ThemeProvider>
     </>
   )
 };
