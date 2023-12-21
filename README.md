@@ -6,10 +6,12 @@
 - JavaScript
 - Html
 - TailWind CSS
+- Styled Components
 
 ### How to install:
 
-- NPM I
+- Npm i
+- Npm run dev
 - localhost:8001
 
-![portfolio](https://github.com/Victor-Zarzar/portfolio-vz/assets/114430780/19e5a0fc-c937-4bd2-b463-dd50632eaddf)
+![project](https://github.com/Victor-Zarzar/portfolio-vz/assets/114430780/97a8cd39-c1a9-4fbf-afc0-dfdee24ec8ed)
