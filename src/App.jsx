@@ -24,7 +24,7 @@ const App = () => {
       body: "#E2E2E2"
   };
   const dark = {
-      body: "#363537"
+      body: "#111827"
   };
 
   return (
