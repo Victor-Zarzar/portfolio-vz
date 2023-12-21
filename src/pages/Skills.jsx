@@ -35,6 +35,7 @@ export default function Skills() {
                                     <ul className="text-lg text-justify">
                                         <li className="mb-2">HTML</li>
                                         <li className="mb-2">Tailwind CSS</li>
+                                        <li className="mb-2">Styled Components</li>
                                         <li className="mb-2">Javascript</li>
                                         <li className="mb-2">React</li>
                                         <li className="mb-2">Cypress</li>
