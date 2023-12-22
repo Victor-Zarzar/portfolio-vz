@@ -31,7 +31,7 @@ export default function Skills() {
                                 </div>
                                 <div className="flex-grow h-[20rem] w-[16rem] md:h-[21rem] md:w-[22rem] lg:h-[21rem] lg:w-[20rem]">
                                     <span className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E]"></span>
-                                    <h2 className="md:text-lg lg:text-xl title-font font-medium mb-3">Front End</h2>
+                                    <h2 className="text-lg md:text-lg lg:text-xl title-font font-medium mb-3">Front End</h2>
                                     <ul className="text-lg text-justify">
                                         <li className="mb-2">HTML</li>
                                         <li className="mb-2">Tailwind CSS</li>
@@ -54,7 +54,7 @@ export default function Skills() {
                                 </div>
                                 <div className="flex-grow h-[20rem] w-[16rem] md:h-[21rem] md:w-[22rem] lg:h-[21rem] lg:w-[20rem]">
                                     <span className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E]"></span>
-                                    <h2 className="md:text-lg lg:text-xl title-font font-medium mb-3">Mobile</h2>
+                                    <h2 className="text-lg md:text-lg lg:text-xl title-font font-medium mb-3">Mobile</h2>
                                     <ul className="text-lg text-justify">
                                         <li className="mb-2">Dart</li>
                                         <li className="mb-2">Flutter</li>
@@ -74,7 +74,7 @@ export default function Skills() {
                                 </div>
                                 <div className="flex-grow h-[20rem] w-[16rem] md:h-[21rem] md:w-[22rem] lg:h-[21rem] lg:w-[20rem]">
                                     <span className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E]"></span>
-                                    <h2 className="md:text-lg lg:text-xl title-font font-medium mb-3">Technologies</h2>
+                                    <h2 className="text-lg md:text-lg lg:text-xl title-font font-medium mb-3">Technologies</h2>
                                     <ul className="text-lg text-justify">
                                         <li className="mb-2">Docker</li>
                                         <li className="mb-2">Git</li>
