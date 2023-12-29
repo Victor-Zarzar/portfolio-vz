@@ -2,6 +2,9 @@ import { useLocation } from "react-router-dom";
 import react from "../assets/react.svg";
 import flutter from "../assets/flutter.svg";
 import docker from "../assets/docker.svg";
+import git from "../assets/git.gif";
+import restapi from "../assets/restapi.gif";
+import terminal from "../assets/terminal.gif";
 
 export default function Skills() {
 
@@ -13,7 +16,7 @@ export default function Skills() {
 
     return (
         <div className="text-gray-200 mt-40">
-            <div className="max-w-6xl mx-auto px-5 py-2">
+            <div className="max-w-6xl mx-auto px-0 py-2">
                 <div className="text-center mb-20">
                     <h1 className="title-skills mb-4 text-4xl font-extrabold leading-10 tracking-tight md:text-2xl lg:text-4xl text-blue-500 text-center">Skills</h1>
                     <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-purple-900 md:text-2xl lg:text-2xl font-semibold tracking-tighter">Some of the technologies I use in my daily life.</p>
@@ -21,8 +24,21 @@ export default function Skills() {
                         <div className="w-32 h-1 rounded-full bg-indigo-500 inline-flex">
                         </div>
                     </div>
+                    <div className="mx-auto mt-20 mb-8 text-center text-white items-center">
+                        <ul className="flex justify-center mt-5 space-x-10">
+                            <li>
+                                <img src={git} alt="git" className="h-10 w-10 md:w-12 md:h-12 lg:w-16 lg:h-16" />
+                            </li>
+                            <li>
+                                <img src={restapi} alt="restapi" className="h-10 w-10 md:w-12 md:h-12 lg:w-16 lg:h-16" />
+                            </li>
+                            <li>
+                                <img src={terminal} alt="terminal" className="h-10 w-10 md:w-12 md:h-12 lg:w-16 lg:h-16" />
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-y-10 gap-10 md:gap-16 lg:gap-8 mr-8 md:mr-0">
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-y-10 gap-10 md:gap-16 lg:gap-8 mr-8 md:mr-0 mx-auto">
                     <div className="p-4 md:mb-0 mb-6 flex flex-col mx-auto mt-5">
                         <div className="pattern-dots-md gray-light">
                             <div className="rounded-2xl bg-gray-800 p-4 transform translate-x-6 -translate-y-6">
@@ -78,6 +94,7 @@ export default function Skills() {
                                     <ul className="text-lg text-justify">
                                         <li className="mb-2">Docker</li>
                                         <li className="mb-2">Git</li>
+                                        <li className="mb-2">GitHub</li>
                                         <li className="mb-2">GitLab</li>
                                         <li className="mb-2">Visual Studio Code</li>
                                         <li className="mb-2">Linux</li>
