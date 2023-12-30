@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 import webdeveloper from "../assets/webdeveloper.gif";
+import PropTypes from 'prop-types';
 
-// eslint-disable-next-line react/prop-types
 const Navbar = ({ theme, setTheme }) => {
   const Links = [
     { name: "Home", link: "home" },
@@ -12,6 +12,11 @@ const Navbar = ({ theme, setTheme }) => {
   ];
   const [open, setOpen] = useState(false);
 
+  Navbar.propTypes = {
+    theme: PropTypes.string.isRequired, 
+    setTheme: PropTypes.func.isRequired,
+  };
+  
   return (
     <div className="w-full max-w-7xl">
       <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
